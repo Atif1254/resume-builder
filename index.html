@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enhanced Editable Resume Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Editable Resume Builder</h1>
+
+        <div class="input-group">
+            <label>Full Name:</label>
+            <input type="text" id="fullName" placeholder="Enter your full name">
+        </div>
+
+        <div class="input-group">
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="input-group">
+            <label>Phone:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="input-group">
+            <label>Education:</label>
+            <textarea id="education" placeholder="Enter your education details"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label>Work Experience:</label>
+            <textarea id="experience" placeholder="Enter your work experience"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label>Add Skill:</label>
+            <input type="text" id="skillInput" placeholder="Enter a skill">
+            <button onclick="addSkill()">Add Skill</button>
+        </div>
+
+        <button onclick="generateResume()">Generate Resume</button>
+
+        <!-- Resume Output Section -->
+        <div class="output" id="resumeOutput">
+            <h2>Resume</h2>
+            <p><strong>Name:</strong> <span id="displayName" contenteditable="true"></span></p>
+            <p><strong>Email:</strong> <span id="displayEmail" contenteditable="true"></span></p>
+            <p><strong>Phone:</strong> <span id="displayPhone" contenteditable="true"></span></p>
+
+            <h3>Education</h3>
+            <p id="displayEducation" contenteditable="true"></p>
+
+            <h3>Work Experience</h3>
+            <p id="displayExperience" contenteditable="true"></p>
+
+            <h3>Skills</h3>
+            <ul id="displaySkills"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #232222;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #000000;
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(133, 106, 106, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fefefe;
+    margin-bottom: 30px;
+}
+
+h2, h3 {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Input Fields and Textarea */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #cacaca;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #174524;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Add Skill Section */
+.input-group button {
+    background-color: #0f3013;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+    background-color: #c2c6ca;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+/* Resume Output Section */
+.output {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.output p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.output ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.output li {
+    background-color: #ecf0f1;
+    margin: 5px 0;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+}
+
+.output li span {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"], input[type="email"], textarea, button {
+        font-size: 1rem;
+    }
+
+    .output p, .output li {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet Devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    input[type="text"], input[type="email"], textarea, button {
+        font-size: 1.1rem;
+    }
+}
+
+/* Desktop Devices */
+@media (min-width: 1024px) {
+    .container {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input[type="text"], input[type="email"], textarea, button {
+        font-size: 1.1rem;
+    }
+
+    .output p, .output li {
+        font-size: 1.2rem;
+    }
+}
